@@ -1,0 +1,49 @@
+*{
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#parent{
+    border: 2px solid black;
+    height: 900px;
+    width: 800px;
+    position: relative;
+}
+
+div{
+    border: 2px solid gold;
+    height: 200px;
+    width: 100px;
+    margin: 2px;
+}
+
+#id1{
+background: black;
+position: absolute;
+left: 35%;
+top: 25%;
+}
+
+#id2{
+    background: blue;
+    position: absolute;
+    left: 35%;
+    bottom: 25%;
+}
+
+#id3{
+    background: orange;
+    position: absolute;
+    right: 35%;
+    top: 25%;
+}
+
+#id4{
+    background: green;
+    position: absolute;
+    right: 35%;
+    bottom: 25%;
+
+}

@@ -1,0 +1,97 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+
+    --background-color: #9B9ECE
+
+}
+
+div{
+    font-size: 1.16rem;
+}
+
+body{
+    font-size: 10px;
+    background: var(--background-color);
+}
+
+@media screen and (max-width: 769px){
+
+    body{
+        background: blue;
+    }
+
+    header{
+        background: url("bilder/hockey2medium.jpg");
+        background-size: cover;
+        background-position: top;
+    }
+
+}
+
+header{
+    height: 30rem;
+    width: 100%;
+    background: url("bilder/hockey2large.jpg");
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#btn{
+    background: #05204A;
+    border-radius: 400px;
+    padding: .2rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    display: inline-block;
+    height: 30px;
+    width: 90px;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    transition: all .1s ease;
+}
+
+#btn:hover{
+    animation: skala 2ms ease infinite;
+}
+
+@keyframes skala{
+    0%{
+        transform: scale(2)
+    }
+    40%{
+        transform: rotate(200deg)
+    }
+    60%{
+        opacity: .2;
+    }
+    100%{
+        transform: scale(1.2)
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 580px){
+    
+    header{
+        background: url("bilder/hockey2small.jpg");
+        background-size: cover;
+        background-position: top;
+    }
+}
+
+
